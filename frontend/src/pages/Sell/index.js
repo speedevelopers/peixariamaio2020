@@ -29,6 +29,7 @@ export default function Sell() {
                 </section>
 
                 <form >
+                    <button className="button" type="submit"    >Nova Venda</button>
                     <label htmlFor="Cliente">Cliente</label>
                     <select>
                         <option>Maycon Ullrich</option>
@@ -36,7 +37,7 @@ export default function Sell() {
                         <option>Heitor Ullrich</option>
                         <option>Davi Ullrich</option>
                     </select>
-                    
+
                     <label htmlFor="Cliente">Produto</label>
                     <select>
                         <option>Carangueijo</option>
@@ -63,10 +64,10 @@ export default function Sell() {
                         />
 
                     </div>
-                    <button className="button" type="submit">Lançar Produto</button>                    
+                    <button className="button" type="submit">Lançar Produto</button>
                     <Tabela />
                 </form>
-              
+
 
             </div>
         </div>
