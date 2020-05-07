@@ -29,7 +29,7 @@ export default function Sell() {
                 </section>
 
                 <form >
-                    <button className="button" type="submit"    >Nova Venda</button>
+                    <button className="buttonnovo" type="submit"    >Nova Venda</button>
                     <label htmlFor="Cliente">Cliente</label>
                     <select>
                         <option>Maycon Ullrich</option>
