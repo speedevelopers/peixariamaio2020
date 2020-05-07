@@ -5,6 +5,8 @@ import logoImgMidle from '../../assets/midle.png';
 import { FiArrowLeft } from 'react-icons/fi';
 import StickHeadTableCategory from '../../StickyHeadTableCategory';
 
+
+
 export default function CategoryList() {
     return (
         <div className="categorylist-container">
@@ -26,7 +28,10 @@ export default function CategoryList() {
                 </section>
 
                 <form>
-                    <StickHeadTableCategory />
+
+                <StickHeadTableCategory />
+             
+
                 </form>
             </div>
         </div>

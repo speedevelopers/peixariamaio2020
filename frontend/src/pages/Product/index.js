@@ -14,13 +14,13 @@ export default function Product() {
     const [category_id, setCategory_id] = useState(0);
     const [unit, setUnit] = useState('');
 
-    useEffect(() => {
+    useEffect(() => {                       //useEffect é acionada uma vez, se comunica com API e o método GET na rota CATEGORY pega todas as categorias
         api.get('category').then(response => {
             setCategories(response.data);
         })
     }, [])
 
-    async function handleProduct(e) {
+    async function handleProduct(e) {      //Passando a merda do PARÂMETRO da função handelProduct
         e.preventDefault();
 
         const data = {

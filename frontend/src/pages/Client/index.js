@@ -6,7 +6,7 @@ import logoImgMidle from '../../assets/midle.png';
 import api from '../../services/api';
 
 export default function Client() {
-    const [name, setName] = useState('');
+    const [name, setName] = useState('');      //USESTATE o 1º item é um ARRAY de nomes e o 2º função que adiciona
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
     const [neighborhood, setNeighborhood] = useState('');
@@ -18,7 +18,7 @@ export default function Client() {
     async function handleClient(e) {
         e.preventDefault();
 
-        const data = {
+        const data = {                  //Variável do frontend é a mesma do backend portanto aqui existe uma abstração
             name,
             address,
             email,
@@ -29,8 +29,8 @@ export default function Client() {
             whatsapp,
         };
         try {
-            const response = await api.post('/client', data);
-            alert(`Cliente cadastrado com sucesso! ${response.data.id}`);
+            const response = await api.post('/client', data);                   //O API chama o método POST na rota CLIENT passando um objeto DATA, no caso, os dados do cliente.   
+            alert(`Cliente cadastrado com sucesso! ${response.data.id}`);      //o RESPONSE está devolvendo o ID do cliente gravado (TIPO site da prefeitura de GYN)
 
         } catch (err) {
             alert('Erro no cadastro de clientes');
@@ -113,7 +113,8 @@ export default function Client() {
                             onChange={e => setUf(e.target.value)}
                         />
                     </div>
-                    <button className="button" type="submit">Salvar</button>
+                    <button className="button" type="submit">Salvar</button>                    
+
                 </form>
             </div>
         </div>

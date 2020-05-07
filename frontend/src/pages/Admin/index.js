@@ -43,7 +43,7 @@ export default function Admin() {
                         <img src={moneyImg} alt="Vendas"/>
                         <strong>Vendas</strong>
                         <p>Aqui você pode pesquisar, alterar e cadastrar as suas VENDAS a qualquer instante.</p>
-                        <Link className="back-link-15px" to="/category">Ir para as vendas</Link>
+                        <Link className="back-link-15px" to="/sell">Ir para as vendas</Link>
                     </li>
 
                     <li>

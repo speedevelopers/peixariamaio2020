@@ -10,6 +10,7 @@ import ClientList from './pages/ClientList';
 import Admin from './pages/Admin';
 import Certo from './pages/Corrigido';
 import CategoryList from './pages/CategoryList';
+import Sell from './pages/Sell';
 
 export default function Routes (){
     return(
@@ -24,6 +25,7 @@ export default function Routes (){
                 <Route path="/admin" component={Admin} />
                 <Route path="/categorylist" component={CategoryList} />
                 <Route path="/certo" component={Certo} />
+                <Route path="/sell" component={Sell} />
             </Switch>
         </BrowserRouter>
 
